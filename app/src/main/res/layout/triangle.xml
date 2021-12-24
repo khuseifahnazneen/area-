@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <LinearLayout
@@ -15,17 +16,18 @@
             android:layout_height="64dp"
             android:background="#009884"
             android:gravity="center"
-            android:text="TRIANGLE"
+            android:text="@string/triangle"
             android:textColor="@color/white"
             android:textSize="30sp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView8"
+            :ignore="SpeakableTextPresentCheck"
             android:layout_width="match_parent"
             android:layout_height="210dp"
-            android:text="    "
-            :ignore="SpeakableTextPresentCheck" />
+            android:text="@string/no"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <EditText
             android:id="@+id/editTextNumber"
@@ -34,10 +36,13 @@
             android:layout_marginBottom="10dp"
             android:background="#B9FFFF"
             android:ems="10"
-            android:hint="Enter Value of Height"
+            android:hint="@string/enter_value_of_height"
+
             android:inputType="number"
             android:textColor="#000000"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            tools:ignore="TextContrastCheck"
+            android:importantForAutofill="no" />
 
         <EditText
             android:id="@+id/editTextNumber4"
@@ -45,23 +50,27 @@
             android:layout_height="58dp"
             android:background="#B9FFFF"
             android:ems="10"
-            android:hint="Enter Value of Base"
+            android:hint="@string/enter_value_of_base"
             android:inputType="number"
             android:textColor="#000000"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            tools:ignore="TextContrastCheck"
+            android:importantForAutofill="no" />
 
         <EditText
             android:id="@+id/editTextNumber3"
             android:layout_width="match_parent"
             android:layout_height="69dp"
             android:ems="10"
-            android:inputType="number" />
+            android:inputType="number"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:importantForAutofill="no" />
 
         <Button
             android:id="@+id/y"
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:text="Calculate"
+            android:text="@string/calculate"
             android:backgroundTint="#009884"
             android:gravity="center"
             android:textColor="@color/white"
@@ -74,7 +83,7 @@
             android:layout_height="64dp"
             android:backgroundTint="#009884"
             android:gravity="center"
-            android:text="Clear"
+            android:text="@string/clear"
             android:textColor="@color/white"
             android:textSize="30sp"
             android:textStyle="bold" />

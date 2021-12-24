@@ -18,7 +18,7 @@
             android:layout_height="64dp"
             android:background="#009884"
             android:gravity="center"
-            android:text="CIRCLE"
+            android:text="@string/circle"
             android:textColor="@color/white"
             android:textSize="30sp"
             android:textStyle="bold" />
@@ -27,7 +27,7 @@
             android:id="@+id/textView8"
             android:layout_width="match_parent"
             android:layout_height="266dp"
-            android:text="    "
+            android:text="@string/no"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <EditText
@@ -36,23 +36,28 @@
             android:layout_height="58dp"
             android:background="#B9FFFF"
             android:ems="10"
-            android:hint="Enter Value of Radius"
+            android:hint="@string/enter_value_of_radius"
+
             android:inputType="number"
             android:textColor="#000000"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            tools:ignore="TextContrastCheck"
+            android:importantForAutofill="no" />
 
         <EditText
             android:id="@+id/editTextNumber2"
             android:layout_width="match_parent"
             android:layout_height="69dp"
             android:ems="10"
-            android:inputType="number" />
+            android:inputType="number"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:importantForAutofill="no" />
 
         <Button
             android:id="@+id/y"
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:text="Calculate"
+            android:text="@string/calculate"
             android:backgroundTint="#009884"
             android:gravity="center"
             android:textColor="@color/white"
@@ -65,7 +70,7 @@
             android:layout_height="64dp"
             android:backgroundTint="#009884"
             android:gravity="center"
-            android:text="Clear"
+            android:text="@string/clear"
             android:textColor="@color/white"
             android:textSize="30sp"
             android:textStyle="bold" />

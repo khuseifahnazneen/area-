@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">ASSIGNMNT3</string>
+    <string name="circle">CIRCLE</string>
+    <string name="enter_value_of_radius">Enter Value of Radius</string>
+    <string name="ractangle">RACTANGLE</string>
+    <string name="enter_value_of_hieght">Enter Value of Height</string>
+    <string name="e" />
+    <string name="enter_value_of_width">Enter Value of Width</string>
+    <string name="calculator">CALCULATOR</string>
+    <string name="rectangle">Rectangle</string>
+    <string name="triangle">Triangle</string>
+    <string name="square">Square</string>
+    <string name="todo">TODO</string>
+    <string name="no" />
+    <string name="clear">Clear</string>
+    <string name="calculate">Calculate</string>
+    <string name="enter_value_of_side">Enter Value of Side</string>
+    <string name="enter_value_of_height">Enter Value of Height</string>
+    <string name="enter_value_of_base">Enter Value of Base</string>
 </resources>
